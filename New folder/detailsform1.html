@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Validation </title>
+    <link rel="stylesheet" href="dash.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  </head> 
+  <body> 
+    <form action="form.js" id="simpledetails" method="post">
+      <h2>Details Form</h2>
+      <div class="form-group firstname"> 
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" name="first_name">
+      </div>
+      <div class="form-group lastname">
+        <label for="fullname">Last Name</label>
+        <input type="text" id="lastname" placeholder="Enter your full name" name="last_name"> 
+      </div>
+      
+      <div class="form-group email">
+        <label for="email">Email Address</label>
+        <input type="text" id="email" placeholder="Enter your email address" name="email">
+      </div>
+      <div class="form-group password">
+        <label for="10">Xth</label>
+        <input type="number" id="standard" placeholder="Enter your percentage" name="percentange">
+        <i id="pass-toggle-btn" ></i>
+      </div>
+
+      <div class="form-group gender"> 
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+          <option value="" selected disabled>Select your gender</option>
+          <option value="Male" name="M">Male </option>
+          <option value="Female"name="F">Female</option>
+          <option value="Other"name="O">Other</option>
+        </select>
+      </div>
+      <div class="phonenumber">
+        <label for="phone-no">Phone Number</label>
+        <input type="number" id="number" placeholder="number" name="phone_number"> 
+      </div>
+      <div class="form-group submit-btn">
+        <input type="submit" >
+        
+      </div>
+    </form>
+   
+  <script src="form.js"></script> 
+  </body>
+</html>
